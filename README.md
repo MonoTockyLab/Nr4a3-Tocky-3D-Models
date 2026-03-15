@@ -87,13 +87,6 @@ If you use or refer to these models, please cite the mCanonicalTockySeq package 
 For a detailed description of the biological applications and the underlying methodology of **mCanonicalTockySeq**, please refer to our preprint:
 
 
-> **Canonical Analysis of Fluorescent Timer-Anchored Transcriptomes Resolves Joint Temporal and Developmental Progression**. 
-> Nobuko Irie, Omnia Reda, Yorifumi Satou, Masahiro Ono.
-> *bioRxiv* (2026). DOI: 
-
-
-
-
 ```bibtex
 @article{Ono2026mCanonicalTocky,
   author = {Ono, Masahiro and others},
@@ -149,7 +142,6 @@ For a detailed description of the biological applications and the underlying met
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter" align="center" width="50" height="50"/>
 </a>
 
-**Professional Homepage**: [Imperial College London - Masahiro Ono](https://www.imperial.ac.uk/people/m.ono)
 
 <a href="https://monotockylab.github.io/mCanonicalTockySeq/index.html">
 <img src="assets/TockyToki.jpg" align="center" width="30%">
