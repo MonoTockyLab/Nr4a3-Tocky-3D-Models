@@ -3,71 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nr4a3-Tocky 3D Developmental-Temporal Models</title>
+    <title>Nr4a3-Tocky 3D Models</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            margin: 40px auto;
-            max-width: 1100px;
-            line-height: 1.6;
-            color: #333;
-            padding: 0 20px;
-        }
-        h1, h2 { text-align: center; color: #2c3e50; }
-        p { text-align: center; font-size: 1.1em; margin-bottom: 30px; }
-        .iframe-container {
-            width: 100%;
-            height: 700px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin-bottom: 50px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .button-container { text-align: center; margin-bottom: 10px; }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #0366d6;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 0 10px;
-            font-weight: bold;
-            transition: background-color 0.2s;
-        }
-        .btn:hover { background-color: #0056b3; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 20px; background: #fdfdfd; color: #333; }
+        
+        /* Container styling */
+        .container { max-width: 1000px; margin: 0 auto; }
+        .text-content { text-align: left; line-height: 1.6; margin-bottom: 40px; font-size: 1.1em; }
+        .text-content h2 { border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 40px; color: #2c3e50; }
+        .text-content h3 { color: #2c3e50; margin-top: 30px; }
+        
+        /* Header styling */
+        .header { text-align: center; margin-bottom: 40px; }
+        .header-logo { max-width: 600px; width: 100%; margin: 20px auto; display: block; }
+        .meta-info { color: #666; font-size: 0.9em; margin-bottom: 20px; }
+        
+        /* Model styling */
+        .model-section { margin-bottom: 60px; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
+        iframe { width: 100%; height: 800px; border: 1px solid #eee; border-radius: 8px; }
+        .btn { display: inline-block; padding: 10px 20px; background: #0366d6; color: white; text-decoration: none; border-radius: 6px; margin: 10px 0; font-weight: bold; transition: 0.2s; }
+        .btn:hover { background: #0056b3; }
+        
+        /* Code and blockquote styling */
+        pre { background: #f6f8fa; padding: 16px; border-radius: 6px; overflow-x: auto; font-size: 0.9em; border: 1px solid #e1e4e8; }
+        code { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; background: #rgba(175, 184, 193, 0.2); padding: 0.2em 0.4em; border-radius: 3px; font-size: 0.9em; }
+        blockquote { border-left: 4px solid #dfe2e5; margin: 0; padding-left: 1em; color: #6a737d; }
+        
+        /* Footer/Contact styling */
+        .contact-grid { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; margin-top: 20px; }
+        .contact-item img { vertical-align: middle; transition: transform 0.2s; }
+        .contact-item img:hover { transform: scale(1.1); }
+        .mascot-footer { text-align: center; margin-top: 60px; border-top: 1px solid #eee; padding-top: 40px; }
     </style>
 </head>
 <body>
 
-    <h1>Nr4a3-Tocky 3D Developmental-Temporal Models</h1>
-    <p>
-        Explore interactive three-dimensional representations of the Nr4a3-Tocky framework.
-        Cells are displayed in developmental fate space together with Tocky Time, allowing
-        simultaneous visualisation of temporal progression and developmental organisation.
-        Click and drag to rotate the model, and scroll to zoom.
-    </p>
-
-    <h2>3D Model Coloured by Gene-Associated Tube Identities</h2>
-    <p>
-        This view highlights overlapping gene-associated developmental corridors inferred from
-        trajectory-tube analysis, enabling visualisation of dynamic and non-mutually exclusive
-        developmental identities.
-    </p>
-    <div class="button-container">
-        <a href="plotTockyFate3D_Lineages.html" class="btn" target="_blank">⛶ View Fullscreen</a>
+<div class="container">
+    
+    <div class="header">
+        <h1>Nr4a3-Tocky-3D-Models</h1>
+        <div class="meta-info">
+            <strong>Author:</strong> Dr Masahiro Ono &nbsp;|&nbsp;
+            <strong>Date:</strong> 15 March 2026
+        </div>
+        
+        <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto;">
+            Interactive three-dimensional visualisations of the <strong>Nr4a3-Tocky developmental-temporal framework</strong> generated from <code>mCanonicalTockySeq</code>.
+        </p>
+        
+        <a href="https://monotockylab.github.io/mCanonicalTockySeq/index.html">
+            <img src="assets/mCanonicalTockySeqLogo.jpg" alt="mCanonicalTockySeq Logo" class="header-logo">
+        </a>
+        
+        <p>
+            <a href="https://monotockylab.github.io/mCanonicalTockySeq/index.html">
+                <img src="https://img.shields.io/badge/docs-GitHub_Pages-blue.svg" alt="Documentation">
+            </a>
+            <br>
+            <a href="https://github.com/MonoTockyLab/mCanonicalTockySeq">View mCanonicalTockySeq on GitHub</a>
+        </p>
     </div>
-    <iframe class="iframe-container" src="plotTockyFate3D_Lineages.html" title="Tube Identity Model"></iframe>
 
-    <h2>3D Model Coloured by Tocky Time</h2>
-    <p>
-        This view shows the shared developmental-temporal geometry of Nr4a3-Tocky thymocytes,
-        with colour indicating the continuous Tocky Time coordinate across the inferred manifold.
-    </p>
-    <div class="button-container">
-        <a href="plotTockyFate3D.html" class="btn" target="_blank">⛶ View Fullscreen</a>
+    <div class="text-content">
+        <p>This repository hosts browser-viewable HTML models showing thymocytes in <strong>CD4 differentiation score × CD8 differentiation score × Tocky Time</strong> space. The models were generated from the Nr4a3-Tocky thymocyte analysis and are intended to provide an intuitive view of the shared developmental-temporal geometry reconstructed by <code>mCanonicalTockySeq</code>.</p>
     </div>
-    <iframe class="iframe-container" src="plotTockyFate3D.html" title="Tocky Time Model"></iframe>
+
+    <div class="model-section">
+        <h2 style="margin-top: 0;">Lineage-Identified Trajectory</h2>
+        <p>3D developmental-temporal model coloured by <strong>gene-associated tube identities</strong>.</p>
+        <a href="plotTockyFate3D_Lineages.html" class="btn" target="_blank">⛶ Open Fullscreen</a>
+        <iframe src="plotTockyFate3D_Lineages.html" title="Lineage Model"></iframe>
+    </div>
+
+    <div class="model-section">
+        <h2 style="margin-top: 0;">Standard Tocky Fate Manifold</h2>
+        <p>3D developmental-temporal model coloured by <strong>Tocky Time</strong>.</p>
+        <a href="plotTockyFate3D.html" class="btn" target="_blank">⛶ Open Fullscreen</a>
+        <iframe src="plotTockyFate3D.html" title="Base Model"></iframe>
+    </div>
+
+    <div class="text-content">
+        <h2>What the models show</h2>
+        <p>These models display thymocytes in a three-dimensional space defined by:</p>
+        <ul>
+            <li><strong>CD4 differentiation score</strong></li>
+            <li><strong>CD8 differentiation score</strong></li>
+            <li><strong>Tocky Time</strong></li>
+        </ul>
+        <p>This geometry was reconstructed from the Nr4a3-Tocky single-cell transcriptomic analysis using <code>mCanonicalTockySeq</code>, <code>mGradientTockySeq</code>, <code>mGetFateScores</code>, and trajectory-tube analysis.</p>
+
+        <h3>Tocky Time model</h3>
+        <p>The base model shows the continuous Tocky temporal coordinate across the inferred developmental-temporal manifold.</p>
+
+        <h3>Gene-associated tube identity model</h3>
+        <p>The lineage-coloured model shows overlapping <strong>gene-associated developmental corridors</strong> inferred from trajectory-tube analysis, allowing non-mutually exclusive developmental identities to be visualised directly.</p>
+
+        <h2>How to use</h2>
+        <p>Interactive controls:</p>
+        <ul>
+            <li><strong>Click and drag</strong> to rotate</li>
+            <li><strong>Scroll</strong> to zoom</li>
+            <li><strong>Hover</strong> to inspect values</li>
+            <li><strong>Open fullscreen</strong> for easier exploration</li>
+        </ul>
+
+        <h2>Biological context</h2>
+        <p>The Nr4a3-Tocky system uses a Fluorescent Timer reporter to provide an experimentally anchored readout of strong T-cell receptor signalling history. In the thymus, this allows temporal progression associated with TCR signalling to be analysed jointly with developmental progression toward CD4 and CD8 single-positive states.</p>
+        <p>These interactive 3D models are intended as visual summaries of that shared developmental-temporal structure.</p>
+
+        <h2>Citation</h2>
+        <p>If you use or refer to these models, please cite the mCanonicalTockySeq package and paper.</p>
+
+        <h3>bioRxiv preprint</h3>
+        <p>For a detailed description of the biological applications and the underlying methodology of <strong>mCanonicalTockySeq</strong>, please refer to our preprint:</p>
+        
+        <blockquote>
+            <p><strong>Canonical Analysis of Fluorescent Timer-Anchored Transcriptomes Resolves Joint Temporal and Developmental Progression</strong>. <br>
+            Nobuko Irie, Omnia Reda, Yorifumi Satou, Masahiro Ono. <br>
+            <em>bioRxiv</em> (2026). DOI: [To be updated]</p>
+        </blockquote>
+
+<pre><code>@article{Ono2026mCanonicalTocky,
+  author = {Ono, Masahiro and others},
+  title = {Canonical Analysis of Fluorescent Timer-Anchored Transcriptomes Resolves Joint Temporal and Developmental Progression},
+  elocation-id = {},
+  year = {2026},
+  doi = {},
+  publisher = {Cold Spring Harbor Laboratory},
+  journal = {bioRxiv},
+  url = {https://www.biorxiv.org}
+}</code></pre>
+
+        <h3>R package</h3>
+<pre><code>@Manual{OnomCanonicalTockySeq,
+  title = {mCanonicalTockySeq: Multidimensional Canonical Tocky Analysis of Temporal and Developmental Structure in Single-Cell Transcriptomes},
+  author = {Masahiro Ono},
+  year = {2026},
+  note = {R package version 0.1.0},
+  url = {https://github.com/MonoTockyLab/mCanonicalTockySeq},
+  doi = {}
+}</code></pre>
+
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="https://monotockylab.github.io/mCanonicalTockySeq/index.html">
+                <img src="assets/mCanonicalTockySeqTransparent.jpg" alt="mCanonicalTockySeq" style="max-width: 100%; width: 600px;">
+            </a>
+        </div>
+
+        <h2>Contact and More</h2>
+        <div class="contact-grid">
+            <a href="mailto:m.ono@imperial.ac.uk" class="contact-item" title="Email">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Circle-icons-mail.svg" alt="Email" width="50" height="50">
+            </a>
+            
+            <a href="https://github.com/MonoTockyLab" class="contact-item" title="GitHub">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="50" height="50">
+            </a>
+            
+            <a href="https://twitter.com/MonoTockyLab" class="contact-item" title="Twitter">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter" width="50" height="50">
+            </a>
+            
+            <a href="http://monotockylab.github.io" class="contact-item" title="MonoLab Homepage">
+                <img src="assets/MonoLab.jpg" alt="MonoTockyLab Homepage" style="height: 50px; border-radius: 8px;">
+            </a>
+            
+            <div class="contact-item" style="margin-left: 20px;">
+                <strong>Professional Homepage:</strong> <a href="https://www.imperial.ac.uk/people/m.ono">Imperial College London - Masahiro Ono</a>
+            </div>
+        </div>
+
+        <div class="mascot-footer">
+            <a href="https://monotockylab.github.io/mCanonicalTockySeq/index.html">
+                <img src="assets/TockyToki.jpg" alt="TockyToki Mascot" style="max-width: 200px;">
+            </a>
+            <p style="color: #888; font-size: 0.9em;">&copy; 2026 MonoTockyLab</p>
+        </div>
+
+    </div>
+</div>
 
 </body>
 </html>
