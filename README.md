@@ -1,5 +1,7 @@
 # Nr4a3-Tocky-3D-Models
 
+[![DOI](https://zenodo.org/badge/1182636445.svg)](https://doi.org/10.5281/zenodo.19054937)
+
 **Author:** Dr Masahiro Ono  
 **Date:** 15 March 2026
 
@@ -78,6 +80,9 @@ The Nr4a3-Tocky system uses a Fluorescent Timer reporter to provide an experimen
 These interactive 3D models are intended as visual summaries of that shared developmental-temporal structure.
 
 ## Citation
+
+
+[![DOI](https://zenodo.org/badge/1182636445.svg)](https://doi.org/10.5281/zenodo.19054937)
 
 If you use or refer to these models, please cite the mCanonicalTockySeq package and paper.
 
